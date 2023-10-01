@@ -1,0 +1,187 @@
+.main-header {
+  position: relative;
+  padding-top: 41px;
+}
+
+.main-header__logo-link {
+  transform: translateY(7px);
+  flex-shrink: 0;
+  z-index: 100;
+
+  svg {
+    transition: fill $trans-default;
+  }
+
+  @include hover-focus {
+    outline: none;
+
+    svg {
+      fill: rgb($color-default-white, 80%);
+    }
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.main-header__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 951px;
+  z-index: -1;
+
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 970px) minmax(115px, 1fr);
+
+  @include vp-767 {
+    grid-template-columns: 1fr minmax(auto, 970px) minmax(auto, 1fr);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    grid-area: 1 / 1 / 2 / 3;
+    height: 800px;
+
+    border-bottom-right-radius: 100px 100px;
+    background:
+      url("../../img/svg/bg.svg") no-repeat top left / cover,
+      url("../../img/index/grass.png") no-repeat bottom right / 100% 91px,
+      url("../../img/svg/tree-secondary.svg") no-repeat bottom 74px right,
+      url("../../img/svg/tree.svg") no-repeat bottom left,
+      url("../../img/svg/city2.svg") no-repeat right -70px bottom 58px,
+      url("../../img/svg/moon-right.svg") no-repeat top 65px right -183px,
+      url("../../img/svg/moon-bottom.svg") no-repeat bottom -15px right 188px,
+      $color-linear-gradient;
+
+    @include vp-1599 {
+      background:
+        url("../../img/svg/bg.svg") no-repeat top left / cover,
+        url("../../img/svg/grass.svg") no-repeat bottom right,
+        url("../../img/svg/tree-secondary.svg") no-repeat bottom 74px right,
+        url("../../img/svg/tree.svg") no-repeat bottom left,
+        url("../../img/svg/city2.svg") no-repeat right -70px bottom 58px,
+        url("../../img/svg/moon-right.svg") no-repeat top 65px right -183px,
+        url("../../img/svg/moon-bottom.svg") no-repeat bottom -15px right 188px,
+        $color-linear-gradient;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    grid-area: 1 / 1 / 2 / 3;
+
+    background:
+      url("../../img/svg/people.svg") no-repeat bottom right 128px,
+      url("../../img/svg/bush.svg") no-repeat bottom 82px right 504px;
+
+    @include vp-1599 {
+      background:
+        url("../../img/svg/people.svg") no-repeat bottom right 13.9%,
+        url("../../img/svg/bush.svg") no-repeat bottom 82px right 51.5%;
+    }
+  }
+}
+
+.main-header__burger {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    cursor: pointer;
+    padding: 0 15px;
+    border: none;
+    border-radius: 10px;
+    // background-color: $color-default-white;
+    background-color: $color-sunset-orange;
+    z-index: 100;
+    height: 50px;
+    // position: absolute;
+    // top: 39px;
+    // right: -9px;
+    // transform: translate(-50%, -50%);
+    transition: background-color $trans-default;
+
+    @include hover-focus {
+      background-color: $color-default-white;
+
+      .main-header__burger-icon {
+        background-color: $color-sunset-orange;
+
+        &::before,
+        &::after {
+          background-color: $color-sunset-orange;
+        }
+      }
+    }
+  }
+}
+
+.main-header__burger-icon {
+  @include vp-767 {
+    display: block;
+    width: 20px;
+    height: 2px;
+    transition: all $trans-default;
+    background-color: $color-default-white;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $color-default-white;
+      width: 20px;
+      height: 2px;
+      left: 0;
+      top: 6px;
+      transition: all $trans-default;
+    }
+
+    &::after {
+      top: -6px;
+    }
+  }
+}
+
+.main-header.is-open {
+  .main-header__burger {
+    @include hover-focus {
+      .main-header__burger-icon {
+        background-color: transparent;
+
+      }
+    }
+  }
+
+  .main-header__burger-icon {
+    @include vp-767 {
+      background-color: transparent;
+
+      &::before,
+      &::after {
+        width: 27px;
+        height: 2px;
+        left: -3px;
+        top: -1px;
+        transform: rotate(45deg);
+        background-color: $color-sunset-orange;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .main-header__burger {
+    background-color: $color-default-white;
+  }
+}

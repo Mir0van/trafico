@@ -1,5 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-// import {initModals} from './modules/modals/init-modals';
+import {initAccordions} from './modules/accordion/init-accordion';
+import {Burger} from './modules/burger/burger';
+import {initAboutSwiper} from './modules/swiper/about-swiper';
 
 // ---------------------------------
 
@@ -16,7 +18,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    // initModals();
+    const burger = new Burger();
+    burger.init();
+    initAccordions();
+    initAboutSwiper();
   });
 });
 

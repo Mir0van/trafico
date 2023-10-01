@@ -1,7 +1,8 @@
 // Colors
+$color-rose-white:                  #fef8f5;
 $color-snow:                        #fff7f5;
 $color-seashell:                    #fef8f5;
-$color-rose-white:                  #fef8f5;
+$color-pippin:                      #fdede8;
 $color-coral-candy:                 #f9cdc8;
 $color-sunset-orange:               #ed4d47;
 $color-night-rider:                 #402b2b;
@@ -22,6 +23,7 @@ $color-torch-red:                   #ff1553;
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$color-linear-gradient:             linear-gradient(297deg, #ffedba 6.67%, #ee4d47 91.82%);
 
 // Typography
 // ---------------------------------
@@ -31,6 +33,7 @@ $fz-default:                        16px;
 
 // штрифты
 $ff-rubik:                          "Rubik", "Arial", sans-serif;
+$ff-roboto:                         "Roboto", "Rubik", "Arial", sans-serif;
 $ff-dm-serif-display:               "DM Serif Display", "Georgia", serif;
 
 // Animation
@@ -53,6 +56,7 @@ $vp-768:                            768px;
 $vp-1024:                           1024px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;
+$vp-1600:                           1600px;
 $vp-1920:                           1920px;
 
 // Retina

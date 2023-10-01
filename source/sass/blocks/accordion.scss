@@ -1,0 +1,110 @@
+.accordion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 10px;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.accordion__column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.accordion__element {
+  margin-bottom: 0;
+  box-shadow: transparent;
+  transition: margin-bottom $trans-default, box-shadow $trans-default;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+
+  &.is-active {
+    box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
+    margin-bottom: 40px;
+
+    .accordion__button {
+      &::before {
+        transform: translateY(-50%) rotate(0deg);
+      }
+
+      &::after {
+        transform: translateY(-50%) rotate(0deg);
+      }
+    }
+  }
+
+  &--more {
+    .accordion__button {
+      justify-content: center;
+      background-color: $color-coral-candy;
+      color: $color-sunset-orange;
+      font-weight: 700;
+      padding: 0;
+      letter-spacing: 0.9px;
+      margin-top: 13px;
+    }
+  }
+}
+
+.accordion__content {
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+}
+
+.accordion__button {
+  @include font-values(500, 18px, 1.66, $color-night-rider);
+  text-align: left;
+  margin: 0;
+  padding: 0 18% 0 36px;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: $color-default-white;
+  box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
+  cursor: pointer;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 50%;
+    right: 36px;
+    transform: translateY(-50%);
+    background-color: $color-sunset-orange;
+    transition: transform $trans-default;
+  }
+
+  &::before {
+    transform: translateY(-50%) rotate(90deg);
+  }
+
+  &::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 1.3;
+    padding: 0 23% 0 20px;
+  }
+}
+
+.accordion__wrapper {
+  @include font-values(300, 18px, 1.66, $color-night-rider);
+  padding: 41px 36px 60px;
+  background-color: $color-snow;
+
+  & > p {
+    margin: 0;
+  }
+}

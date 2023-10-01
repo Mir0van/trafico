@@ -1,0 +1,131 @@
+.info {
+  padding-top: 185px;
+  padding-bottom: 100px;
+  overflow: hidden;
+
+  @include vp-767 {
+    padding-top: 100px;
+  }
+}
+
+.info__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 268px;
+
+  @include vp-1023 {
+    row-gap: 168px;
+  }
+}
+
+.info__container {
+  padding-left: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-767 {
+    padding: 0;
+  }
+
+  & > img {
+    position: absolute;
+    top: -80px;
+    right: -56px;
+    z-index: 1;
+
+    @include vp-1023 {
+      width: 56vw;
+      top: -80px;
+      right: -40px;
+    }
+
+    @include vp-767 {
+      position: static;
+      width: auto;
+    }
+  }
+
+  & > h3 {
+    @include font-values(700, 24px, 1.66, $color-sunset-orange);
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    margin: 0;
+    margin-bottom: 45px;
+    z-index: 2;
+  }
+
+  & > p {
+    @include font-values(300, 18px, 2.22, $color-night-rider);
+    margin: 0;
+    max-width: 470px;
+    z-index: 2;
+
+    @include vp-767 {
+      font-size: 16px;
+    }
+  }
+
+  & > span {
+    @include font-values(500, 24px, 1.5, $color-night-rider);
+    display: block;
+    margin-top: 66px;
+    max-width: 570px;
+    background-color: $color-pippin;
+    padding: 29px 25px 22px 45px;
+    border-top-left-radius: 6px 6px;
+    border-bottom-left-radius: 6px 6px;
+    border-left: 10px solid $color-sunset-orange;
+    z-index: 2;
+
+    @include vp-767 {
+      font-size: 18px;
+    }
+  }
+
+  &--reverse {
+    align-items: end;
+
+    @include vp-767 {
+      align-items: start;
+    }
+
+    & > img {
+      top: -108px;
+      left: -113px;
+      right: auto;
+
+      @include vp-1023 {
+        top: -43px;
+        left: -72px;
+        width: 60vw;
+      }
+
+      @include vp-767 {
+        width: auto;
+      }
+    }
+
+    & > h3 {
+      width: 45%;
+      max-width: 455px;
+
+      @include vp-767 {
+        width: auto;
+      }
+    }
+
+    & > p {
+      width: 45%;
+      max-width: 455px;
+
+      @include vp-1023 {
+        width: 50%;
+      }
+
+      @include vp-767 {
+        width: auto;
+      }
+    }
+  }
+}

@@ -18,52 +18,332 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <div class="main-header__cover"></div>
+      <header class="main-header" data-header>
+        <div class="container">
+          <div class="main-header__wrapper">
+            <a class="main-header__logo-link" href="#">
+              <svg width="212" height="50" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Trafico.">
+                <use href="./img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#info" data-close-menu>About</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#how" data-close-menu>How To</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#faq" data-close-menu>FAQS</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link main-nav__link--btn btn" href="#contacts" data-close-menu>Contact us</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="main-header__burger" type="button" data-burger>
+              <span class="visually-hidden">Открыть меню</span>
+              <span class="main-header__burger-icon"></span>
+            </button>
+          </div>
+        </div>
       </header>
       <main>
         <section class="intro">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <div class="intro__wrapper">
+              <h1>Your awesome traffic permit consultant.</h1>
+              <a class="intro__link btn" href="#info">
+                Get started
+                <svg class="intro__icon" width="30" height="13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" aria-label="Arrow.">
+                  <use href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <svg class="intro__bg-icon" width="600" height="395" xmlns="http://www.w3.org/2000/svg" aria-label="Truck.">
+            <use href="./img/sprite.svg#truck"></use>
+          </svg>
+        </section>
+        <section class="info" id="info">
+          <h2 class="visually-hidden">Information</h2>
+          <div class="container">
+            <div class="info__wrapper">
+              <div class="info__container">
+                <h3>About us</h3>
+                <p>The occupational traffic permit is&nbsp;one of&nbsp;the most important things in&nbsp;the company when carrying out freight transport. In&nbsp;fact, it&nbsp;is&nbsp;a&nbsp;prerequisite for doing business traffic at&nbsp;all.</p>
+                <span>How do&nbsp;you do&nbsp;when you need to&nbsp;obtain a&nbsp;commercial traffic permit for freight transport to&nbsp;your business?</span>
+                <img width="576" height="480" src="./img/svg/info-about.svg" alt="About." loading="lazy">
+              </div>
+              <div class="info__container info__container--reverse" id="how">
+                <h3>How to apply</h3>
+                <p>When applying for a&nbsp;traffic permit, there are certain requirements that you must meet that are included in&nbsp;the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources. Important to&nbsp;remember is&nbsp;to&nbsp;confirm your application for a&nbsp;traffic permit by&nbsp;the company&rsquo;s company signer or&nbsp;CEO.</p>
+                <img width="721" height="679" src="./img/svg/info-apply.svg" alt="Apply." loading="lazy">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="faq">
+          <div class="container">
+            <div class="faq__wrapper" id="faq">
+              <span>FAQ</span>
+              <h2>Questions and Answers on&nbsp;Professional Traffic Permits:</h2>
+              <img class="faq__bg-img" src="./img/svg/faq.svg" width="708" height="498" alt="Faq." loading="lazy">
+              <div class="accordion" data-accordion="parent" data-single>
+                <div class="accordion__column">
+                  <div class="accordion__element" data-accordion="element">
+                    <button class="accordion__button" type="button" aria-label="Открыть" data-accordion="button">
+                      What is a professional traffic permit?
+                    </button>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Traffic permits are a requirement for conducting professional traffic.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <button class="accordion__button" type="button" aria-label="Открыть" data-accordion="button">
+                      How to check the traffic condition?
+                    </button>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Traffic permits are a requirement for conducting professional traffic.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <button class="accordion__button" type="button" aria-label="Открыть" data-accordion="button">
+                      What are the requirements for a professional traffic permit?
+                    </button>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Traffic permits are a requirement for conducting professional traffic.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <button class="accordion__button" type="button" aria-label="Открыть" data-accordion="button">
+                      Are there professional traffic permit training courses at a distance?
+                    </button>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Traffic permits are a requirement for conducting professional traffic.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__column">
+                  <div class="accordion__element" data-accordion="element">
+                    <button class="accordion__button" type="button" aria-label="Открыть" data-accordion="button">
+                      When is a professional traffic permit needed?
+                    </button>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Traffic permits are a requirement for conducting professional traffic.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <button class="accordion__button" type="button" aria-label="Открыть" data-accordion="button">
+                      Where to look for a traffic permit?
+                    </button>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Traffic permits are a requirement for conducting professional traffic.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <button class="accordion__button" type="button" aria-label="Открыть" data-accordion="button">
+                      How much does a commercial traffic permit cost for goods?
+                    </button>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Traffic permits are a requirement for conducting professional traffic.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element" data-accordion="element">
+                    <button class="accordion__button" type="button" aria-label="Открыть" data-accordion="button">
+                      How to plug in for the traffic permit test?
+                    </button>
+                    <div class="accordion__content" data-accordion="content">
+                      <div class="accordion__wrapper">
+                        <p>Traffic permits are a requirement for conducting professional traffic.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__element accordion__element--more">
+                    <button class="accordion__button" type="button" aria-label="Открыть">
+                      LOAD MORE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container">
+            <div class="about__container">
+              <div class="about__wrapper">
+                <span>About us</span>
+                <h2>Out Awesome Clients</h2>
+                <div class="about__slider-button-wrapper">
+                  <div class="about__swiper-button about__swiper-button--prev swiper-button-prev">
+                    <svg width="30" height="13" fill="#ed4d47" xmlns="http://www.w3.org/2000/svg" aria-label="Previusly.">
+                      <use href="./img/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="about__swiper-button about__swiper-button--next swiper-button-next">
+                    <svg width="30" height="13" fill="#ed4d47" xmlns="http://www.w3.org/2000/svg" aria-label="Next.">
+                      <use href="./img/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="about__slider swiper" id="aboutSwiper">
+                <ul class="about__slider-list swiper-wrapper">
+                  <li class="about__slide swiper-slide">
+                    <div class="about__slide-wrapper">
+                      <p>Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
+                      <div class="about__slide-avatar">
+                        <picture>
+                          <source type="image/webp" srcset="./img/index/isaak-pettersson.webp 1x, ./img/index/isaak-pettersson@2x.webp 2x">
+                          <img src="./img/index/isaak-pettersson.jpg" srcset="./img/index/isaak-pettersson.jpg@2x.jpg 2x" loading="lazy" width="60" height="60" alt="Isaak Pettersson.">
+                        </picture>
+                      </div>
+                      <span>Isak Pettersson</span>
+                    </div>
+                  </li>
+                  <li class="about__slide swiper-slide">
+                    <div class="about__slide-wrapper">
+                      <p>From most barricade or traffic control companies located in the phone book. They employ certified Traffic Control Supervisors (TCS) who can generate and certify the traffic control plan. </p>
+                      <div class="about__slide-avatar">
+                        <picture>
+                          <source type="image/webp" srcset="./img/index/simon-sandberg.webp 1x, ./img/index/simon-sandberg@2x.webp 2x">
+                          <img src="./img/index/simon-sandberg.jpg" srcset="./img/index/simon-sandberg.jpg@2x.jpg 2x" loading="lazy" width="60" height="60" alt="Isaak Pettersson.">
+                        </picture>
+                      </div>
+                      <span>Simon Sandberg</span>
+                    </div>
+                  </li>
+                  <li class="about__slide swiper-slide">
+                    <div class="about__slide-wrapper">
+                      <p>
+                        An A-Line, or access restriction deed is a property right that has been obtained by CDOT for the sole purpose of prohibiting direct
+                      </p>
+                      <div class="about__slide-avatar">
+                        <picture>
+                          <source type="image/webp" srcset="./img/index/user.webp 1x, ./img/index/user@2x.webp 2x">
+                          <img src="./img/index/user.jpg" srcset="./img/index/user.jpg@2x.jpg 2x" loading="lazy" width="60" height="60" alt="Isaak Pettersson.">
+                        </picture>
+                      </div>
+                      <span>Robert Downey</span>
+                    </div>
+                  </li>
+                  <li class="about__slide swiper-slide">
+                    <div class="about__slide-wrapper">
+                      <p>
+                        An A-Line, or access restriction deed is a property right that has been obtained by CDOT for the sole purpose of prohibiting direct
+                      </p>
+                      <div class="about__slide-avatar">
+                        <picture>
+                          <source type="image/webp" srcset="./img/index/user.webp 1x, ./img/index/user@2x.webp 2x">
+                          <img src="./img/index/user.jpg" srcset="./img/index/user.jpg@2x.jpg 2x" loading="lazy" width="60" height="60" alt="Isaak Pettersson.">
+                        </picture>
+                      </div>
+                      <span>Robert Downey</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts" id="contacts">
+          <h2 class="visually-hidden">Stay in touch with us</h2>
+          <svg class="contacts__img" width="382" height="209" xmlns="http://www.w3.org/2000/svg" aria-label="Truck." aria-hidden="true">
+            <use href="./img/sprite.svg#truck-secondary"></use>
+          </svg>
+          <img class="contacts__img-bg" width="817" height="457" src="./img/svg/line-bg.svg" alt="Line." loading="lazy" aria-hidden="true">
+          <div class="container">
+            <div class="contacts__wrapper">
+              <p class="contacts__description">
+                We&nbsp;provide traffic management consultants so&nbsp;you get started quickly, contact&nbsp;us for a&nbsp;quote today!
+              </p>
+              <div class="contacts__form form">
+                <form action="https://echo.htmlacademy.ru/" method="get">
+                  <div class="form__input">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Your name" id="name" required>
+                  </div>
+                  <div class="form__input">
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" placeholder="Your email address" id="email" required>
+                  </div>
+                  <button class="form__submit btn" type="submit">
+                    Get started
+                    <svg class="form__submit-icon" width="30" height="13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" aria-label="Arrow.">
+                      <use href="./img/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <div class="contacts__nav">
+                <a href="#">
+                  <svg width="170" height="41" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Trafico.">
+                    <use href="./img/sprite.svg#logo"></use>
+                  </svg>
+                </a>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <a class="contacts__link" href="#info">About</a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link" href="#how">How To</a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link" href="#faq">FAQS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="main-footer">
+        <div class="container">
+          <div class="main-footer__wrapper">
+            <p>Copyright @ 2019</p>
+            <ul class="main-footer__social-list">
+              <li class="main-footer__social-item">
+                <a class="main-footer__social-link" href="#">
+                  <svg width="36" height="36" fill="#ed4d47" xmlns="http://www.w3.org/2000/svg" aria-label="Facebook.">
+                    <use href="./img/sprite.svg#fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="main-footer__social-item">
+                <a class="main-footer__social-link" href="#">
+                  <svg width="36" height="36" fill="#ed4d47" xmlns="http://www.w3.org/2000/svg" aria-label="Facebook.">
+                    <use href="./img/sprite.svg#tw"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="main-footer__social-item">
+                <a class="main-footer__social-link" href="#">
+                  <svg width="36" height="36" fill="#ed4d47" xmlns="http://www.w3.org/2000/svg" aria-label="Facebook.">
+                    <use href="./img/sprite.svg#ig"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
     </div>
 
     <script src="js/vendor.min.js"></script>
