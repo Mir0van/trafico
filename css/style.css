@@ -2597,6 +2597,18 @@ button,
   box-shadow: transparent;
 }
 
+.accordion__element.is-active .accordion__button::before {
+  -webkit-transform: translateY(-50%) rotate(0deg);
+  -ms-transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.accordion__element.is-active .accordion__button::after {
+  -webkit-transform: translateY(-50%) rotate(0deg);
+  -ms-transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
+}
+
 .accordion__element--more .accordion__button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -2644,6 +2656,22 @@ button,
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background-color: #ed4d47;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.accordion__button::before {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.accordion__button::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .accordion__wrapper {
