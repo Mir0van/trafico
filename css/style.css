@@ -2592,11 +2592,13 @@ button,
 }
 
 .accordion__element {
-  margin-bottom: 0;
+  margin-bottom: 8px;
   -webkit-box-shadow: transparent;
   box-shadow: transparent;
-  -webkit-transition: margin-bottom 0.3s ease;
-  transition: margin-bottom 0.3s ease;
+  -webkit-transition: margin-bottom 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: margin-bottom 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: margin-bottom 0.3s ease, box-shadow 0.3s ease;
+  transition: margin-bottom 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
   border-bottom-left-radius: 10px 10px;
   border-bottom-right-radius: 10px 10px;
 }
@@ -2634,6 +2636,7 @@ button,
 .accordion__content {
   border-bottom-left-radius: 10px 10px;
   border-bottom-right-radius: 10px 10px;
+  margin-top: -8px;
 }
 
 .accordion__button {
@@ -2655,6 +2658,8 @@ button,
   border: none;
   border-radius: 10px;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
+  box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
   cursor: pointer;
   position: relative;
 }
@@ -3563,14 +3568,6 @@ button,
     -ms-grid-row-align: center;
     align-self: center;
     margin-bottom: 50px;
-  }
-
-  .accordion__element {
-    margin-bottom: 8px;
-  }
-
-  .accordion__content {
-    margin-top: -8px;
   }
 
   .accordion__button {
