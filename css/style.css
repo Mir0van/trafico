@@ -3567,6 +3567,10 @@ button,
     margin-bottom: 50px;
   }
 
+  .accordion__content {
+    margin-top: -8px;
+  }
+
   .accordion__button {
     font-size: 16px;
     line-height: 1.3;
