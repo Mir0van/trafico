@@ -2572,18 +2572,11 @@ button,
   margin-bottom: 0;
   -webkit-box-shadow: transparent;
   box-shadow: transparent;
-  -webkit-transition: margin-bottom 0.3s ease, -webkit-box-shadow 0.3s ease;
-  transition: margin-bottom 0.3s ease, -webkit-box-shadow 0.3s ease;
-  transition: margin-bottom 0.3s ease, box-shadow 0.3s ease;
-  transition: margin-bottom 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
-  border-bottom-left-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
 }
 
 .accordion__element.is-active {
   -webkit-box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
   box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
-  margin-bottom: 40px;
 }
 
 .accordion__element--more .accordion__button {
