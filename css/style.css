@@ -2604,6 +2604,8 @@ button,
 }
 
 .accordion__element.is-active {
+  -webkit-box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
+  box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
   margin-bottom: 40px;
 }
 
@@ -2655,8 +2657,6 @@ button,
   border: none;
   border-radius: 10px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
-  box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
   cursor: pointer;
   position: relative;
 }
