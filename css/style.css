@@ -3567,6 +3567,10 @@ button,
     margin-bottom: 50px;
   }
 
+  .accordion__element {
+    margin-bottom: 8px;
+  }
+
   .accordion__content {
     margin-top: -8px;
   }
