@@ -2574,11 +2574,6 @@ button,
   box-shadow: transparent;
 }
 
-.accordion__element.is-active {
-  -webkit-box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
-  box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
-}
-
 .accordion__element--more .accordion__button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -2589,63 +2584,6 @@ button,
   padding: 0;
   letter-spacing: 0.9px;
   margin-top: 13px;
-}
-
-.accordion__content {
-  border-bottom-left-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
-}
-
-.accordion__button {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.66;
-  color: #402b2b;
-  text-align: left;
-  margin: 0;
-  padding: 0 18% 0 36px;
-  height: 90px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: none;
-  border-radius: 10px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
-  box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
-  cursor: pointer;
-  position: relative;
-}
-
-.accordion__button::before,
-.accordion__button::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 2px;
-  top: 50%;
-  right: 36px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  background-color: #ed4d47;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-
-.accordion__wrapper {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 1.66;
-  color: #402b2b;
-  padding: 41px 36px 60px;
-  background-color: #fff7f5;
 }
 
 .accordion__wrapper > p {
@@ -3513,12 +3451,6 @@ button,
     -ms-grid-row-align: center;
     align-self: center;
     margin-bottom: 50px;
-  }
-
-  .accordion__button {
-    font-size: 16px;
-    line-height: 1.3;
-    padding: 0 23% 0 20px;
   }
 
   .about__wrapper > h2 {
