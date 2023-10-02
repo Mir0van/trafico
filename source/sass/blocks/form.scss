@@ -41,7 +41,7 @@
 
     @include hover-focus {
       outline: 1px solid $color-sunset-orange;
-      box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.20);
+      box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.2);
     }
 
     @include vp-767 {

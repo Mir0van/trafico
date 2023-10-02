@@ -51,24 +51,24 @@
 
     border-bottom-right-radius: 100px 100px;
     background:
-      url("../../img/svg/bg.svg") no-repeat top left / cover,
-      url("../../img/index/grass.png") no-repeat bottom right / 100% 91px,
-      url("../../img/svg/tree-secondary.svg") no-repeat bottom 74px right,
-      url("../../img/svg/tree.svg") no-repeat bottom left,
-      url("../../img/svg/city2.svg") no-repeat right -70px bottom 58px,
-      url("../../img/svg/moon-right.svg") no-repeat top 65px right -183px,
-      url("../../img/svg/moon-bottom.svg") no-repeat bottom -15px right 188px,
+      url("../img/svg/bg.svg") no-repeat top left / cover,
+      url("../img/index/grass.png") no-repeat bottom right / 100% 91px,
+      url("../img/svg/tree-secondary.svg") no-repeat bottom 74px right,
+      url("../img/svg/tree.svg") no-repeat bottom left,
+      url("../img/svg/city2.svg") no-repeat right -70px bottom 58px,
+      url("../img/svg/moon-right.svg") no-repeat top 65px right -183px,
+      url("../img/svg/moon-bottom.svg") no-repeat bottom -15px right 188px,
       $color-linear-gradient;
 
     @include vp-1599 {
       background:
-        url("../../img/svg/bg.svg") no-repeat top left / cover,
-        url("../../img/svg/grass.svg") no-repeat bottom right,
-        url("../../img/svg/tree-secondary.svg") no-repeat bottom 74px right,
-        url("../../img/svg/tree.svg") no-repeat bottom left,
-        url("../../img/svg/city2.svg") no-repeat right -70px bottom 58px,
-        url("../../img/svg/moon-right.svg") no-repeat top 65px right -183px,
-        url("../../img/svg/moon-bottom.svg") no-repeat bottom -15px right 188px,
+        url("../img/svg/bg.svg") no-repeat top left / cover,
+        url("../img/svg/grass.svg") no-repeat bottom right,
+        url("../img/svg/tree-secondary.svg") no-repeat bottom 74px right,
+        url("../img/svg/tree.svg") no-repeat bottom left,
+        url("../img/svg/city2.svg") no-repeat right -70px bottom 58px,
+        url("../img/svg/moon-right.svg") no-repeat top 65px right -183px,
+        url("../img/svg/moon-bottom.svg") no-repeat bottom -15px right 188px,
         $color-linear-gradient;
     }
   }
@@ -79,13 +79,13 @@
     grid-area: 1 / 1 / 2 / 3;
 
     background:
-      url("../../img/svg/people.svg") no-repeat bottom right 128px,
-      url("../../img/svg/bush.svg") no-repeat bottom 82px right 504px;
+      url("../img/svg/people.svg") no-repeat bottom right 128px,
+      url("../img/svg/bush.svg") no-repeat bottom 82px right 504px;
 
     @include vp-1599 {
       background:
-        url("../../img/svg/people.svg") no-repeat bottom right 13.9%,
-        url("../../img/svg/bush.svg") no-repeat bottom 82px right 51.5%;
+        url("../img/svg/people.svg") no-repeat bottom right 13.9%,
+        url("../img/svg/bush.svg") no-repeat bottom 82px right 51.5%;
     }
   }
 }
@@ -99,14 +99,9 @@
     padding: 0 15px;
     border: none;
     border-radius: 10px;
-    // background-color: $color-default-white;
     background-color: $color-sunset-orange;
     z-index: 100;
     height: 50px;
-    // position: absolute;
-    // top: 39px;
-    // right: -9px;
-    // transform: translate(-50%, -50%);
     transition: background-color $trans-default;
 
     @include hover-focus {
@@ -153,10 +148,11 @@
 
 .main-header.is-open {
   .main-header__burger {
+    background-color: $color-default-white;
+
     @include hover-focus {
       .main-header__burger-icon {
         background-color: transparent;
-
       }
     }
   }
@@ -179,9 +175,5 @@
         transform: rotate(-45deg);
       }
     }
-  }
-
-  .main-header__burger {
-    background-color: $color-default-white;
   }
 }
