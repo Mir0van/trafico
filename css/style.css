@@ -2595,8 +2595,16 @@ button,
   margin-bottom: 0;
   -webkit-box-shadow: transparent;
   box-shadow: transparent;
+  -webkit-transition: margin-bottom 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: margin-bottom 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: margin-bottom 0.3s ease, box-shadow 0.3s ease;
+  transition: margin-bottom 0.3s ease, box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
   border-bottom-left-radius: 10px 10px;
   border-bottom-right-radius: 10px 10px;
+}
+
+.accordion__element.is-active {
+  margin-bottom: 40px;
 }
 
 .accordion__element.is-active .accordion__button::before {
