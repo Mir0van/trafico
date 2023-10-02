@@ -2499,29 +2499,6 @@ button,
   height: 1500px;
 }
 
-.faq__wrapper::before {
-  content: "";
-  position: absolute;
-  background-color: #fdede8;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 83%;
-  border-top-left-radius: 200px 200px;
-  z-index: -1;
-}
-
-.faq__wrapper::after {
-  content: "";
-  position: absolute;
-  background-color: #fdede8;
-  top: 0;
-  bottom: 0;
-  left: 100%;
-  width: calc((100vw - 100%) / 2);
-  z-index: -1;
-}
-
 .faq__wrapper > span {
   font-weight: 700;
   font-size: 24px;
