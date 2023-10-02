@@ -2586,6 +2586,52 @@ button,
   margin-top: 13px;
 }
 
+.accordion__button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.66;
+  color: #402b2b;
+  text-align: left;
+  margin: 0;
+  padding: 0 18% 0 36px;
+  height: 90px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion__button::before,
+.accordion__button::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 50%;
+  right: 36px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #ed4d47;
+}
+
+.accordion__wrapper {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.66;
+  color: #402b2b;
+  padding: 41px 36px 60px;
+  background-color: #fff7f5;
+}
+
 .accordion__wrapper > p {
   margin: 0;
 }
