@@ -2261,7 +2261,7 @@ button,
   grid-area: 1/1/2/3;
   height: 800px;
   border-bottom-right-radius: 100px 100px;
-  background: url("../img/svg/bg.svg") no-repeat top left/cover, url("../img/index/grass.png") no-repeat bottom right/100% 91px, url("../img/svg/tree-secondary.svg") no-repeat bottom 74px right, url("../img/svg/tree.svg") no-repeat bottom left, url("../img/svg/city2.svg") no-repeat right -70px bottom 58px, url("../img/svg/moon-right.svg") no-repeat top 65px right -183px, url("../img/svg/moon-bottom.svg") no-repeat bottom -15px right 188px, linear-gradient(297deg, #ffedba 6.67%, #ee4d47 91.82%);
+  background: linear-gradient(297deg, #ffedba 6.67%, #ee4d47 91.82%);
 }
 
 .main-header__cover::after {
@@ -2272,19 +2272,18 @@ button,
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 1/1/2/3;
-  background: url("../img/svg/people.svg") no-repeat bottom right 128px, url("../img/svg/bush.svg") no-repeat bottom 82px right 504px;
 }
 
 .main-header__burger {
   display: none;
 }
 
-.main-header.is-open .main-header__burger.focus-visible:focus .main-header__burger-icon {
-  background-color: transparent;
-}
-
 .main-header.is-open .main-header__burger {
   background-color: #ffffff;
+}
+
+.main-header.is-open .main-header__burger.focus-visible:focus .main-header__burger-icon {
+  background-color: transparent;
 }
 
 .main-nav {
@@ -2777,8 +2776,8 @@ button,
   height: 360px;
   border-radius: 10px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.1);
-  box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.1);
+  -webkit-box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
+  box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.1);
   padding: 60px 45px 40px 49px;
   display: -ms-grid;
   display: grid;
@@ -3074,8 +3073,8 @@ button,
 
 .form__input input:not([type=checkbox]).focus-visible:focus {
   outline: 1px solid #ed4d47;
-  -webkit-box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.2);
-  box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.2);
+  -webkit-box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.2);
+  box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.2);
 }
 
 .form__input label {
@@ -3215,11 +3214,7 @@ button,
 
 @media (max-width: 1599px) {
   .main-header__cover::before {
-    background: url("../img/svg/bg.svg") no-repeat top left/cover, url("../img/svg/grass.svg") no-repeat bottom right, url("../img/svg/tree-secondary.svg") no-repeat bottom 74px right, url("../img/svg/tree.svg") no-repeat bottom left, url("../img/svg/city2.svg") no-repeat right -70px bottom 58px, url("../img/svg/moon-right.svg") no-repeat top 65px right -183px, url("../img/svg/moon-bottom.svg") no-repeat bottom -15px right 188px, linear-gradient(297deg, #ffedba 6.67%, #ee4d47 91.82%);
-  }
-
-  .main-header__cover::after {
-    background: url("../img/svg/people.svg") no-repeat bottom right 13.9%, url("../img/svg/bush.svg") no-repeat bottom 82px right 51.5%;
+    background: linear-gradient(297deg, #ffedba 6.67%, #ee4d47 91.82%);
   }
 }
 
@@ -3819,8 +3814,8 @@ button,
 
   .form__input input:not([type=checkbox]):hover:not(.focus-visible) {
     outline: 1px solid #ed4d47;
-    -webkit-box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.2);
-    box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.2);
+    -webkit-box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.2);
+    box-shadow: 0 20px 40px 0 rgba(238, 77, 71, 0.2);
   }
 
   .form__submit:hover:not(.focus-visible) .form__submit-icon {
