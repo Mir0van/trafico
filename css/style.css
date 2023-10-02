@@ -2261,7 +2261,7 @@ button,
   grid-area: 1/1/2/3;
   height: 800px;
   border-bottom-right-radius: 100px 100px;
-  background: linear-gradient(297deg, #ffedba 6.67%, #ee4d47 91.82%);
+  background: url("../img/svg/bg.svg") no-repeat top left/cover, url("../img/index/grass.png") no-repeat bottom right/100% 91px, url("../img/svg/tree-secondary.svg") no-repeat bottom 74px right, url("../img/svg/tree.svg") no-repeat bottom left, url("../img/svg/city2.svg") no-repeat right -70px bottom 58px, url("../img/svg/moon-right.svg") no-repeat top 65px right -183px, url("../img/svg/moon-bottom.svg") no-repeat bottom -15px right 188px, linear-gradient(297deg, #ffedba 6.67%, #ee4d47 91.82%);
 }
 
 .main-header__cover::after {
@@ -2272,6 +2272,7 @@ button,
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 1/1/2/3;
+  background: url("../img/svg/people.svg") no-repeat bottom right 128px, url("../img/svg/bush.svg") no-repeat bottom 82px right 504px;
 }
 
 .main-header__burger {
@@ -3214,7 +3215,11 @@ button,
 
 @media (max-width: 1599px) {
   .main-header__cover::before {
-    background: linear-gradient(297deg, #ffedba 6.67%, #ee4d47 91.82%);
+    background: url("../img/svg/bg.svg") no-repeat top left/cover, url("../img/svg/grass.svg") no-repeat bottom right, url("../img/svg/tree-secondary.svg") no-repeat bottom 74px right, url("../img/svg/tree.svg") no-repeat bottom left, url("../img/svg/city2.svg") no-repeat right -70px bottom 58px, url("../img/svg/moon-right.svg") no-repeat top 65px right -183px, url("../img/svg/moon-bottom.svg") no-repeat bottom -15px right 188px, linear-gradient(297deg, #ffedba 6.67%, #ee4d47 91.82%);
+  }
+
+  .main-header__cover::after {
+    background: url("../img/svg/people.svg") no-repeat bottom right 13.9%, url("../img/svg/bush.svg") no-repeat bottom 82px right 51.5%;
   }
 }
 
